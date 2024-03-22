@@ -45,4 +45,3 @@ services:
       - shared-workspace:/opt/workspace
     depends_on:
       - spark-master
-
