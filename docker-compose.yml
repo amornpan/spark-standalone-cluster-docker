@@ -15,6 +15,7 @@ services:
       - 4040:4040
     volumes:
       - shared-workspace:/opt/workspace
+      - ./workspace:/opt/workspace
   spark-master:
     image: amornpan/spark-master:latest
     container_name: spark-master
