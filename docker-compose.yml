@@ -8,6 +8,9 @@ services:
   jupyterlab:
     image: amornpan/jupyterlab:latest
     container_name: jupyterlab
+    environment:
+      - SPARK_WORKER_CORES=1
+      - SPARK_WORKER_MEMORY=1024m
     ports:
       - 8888:8888
       - 4040:4040
@@ -25,8 +28,8 @@ services:
     image: amornpan/spark-worker:latest
     container_name: spark-worker-1
     environment:
-      - SPARK_WORKER_CORES=1
-      - SPARK_WORKER_MEMORY=512m
+      - SPARK_WORKER_CORES=2
+      - SPARK_WORKER_MEMORY=5120m
     ports:
       - 8081:8081
     volumes:
@@ -37,8 +40,8 @@ services:
     image: amornpan/spark-worker:latest
     container_name: spark-worker-2
     environment:
-      - SPARK_WORKER_CORES=1
-      - SPARK_WORKER_MEMORY=512m
+      - SPARK_WORKER_CORES=2
+      - SPARK_WORKER_MEMORY=5120m
     ports:
       - 8082:8081
     volumes:
