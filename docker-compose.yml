@@ -14,7 +14,7 @@ services:
       - 8888:8888
       - 4040:4040
     volumes:
-      - shared-workspace:/opt/workspace
+      #- shared-workspace:/opt/workspace
       - ./workspace:/opt/workspace
   spark-master:
     image: amornpan/spark-master:latest
