@@ -36,6 +36,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 ### 2.3 ทดสอบการติดตั้ง Docker Compose ด้วยการรันคำสั่ง:
 docker-compose --version
 
+sudo usermod -aG docker $USER
+
 
 ## How to use
 $ curl -LO https://raw.githubusercontent.com/amornpan/spark-standalone-cluster-docker/master/docker-compose.yml
