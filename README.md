@@ -40,6 +40,6 @@
 ``` sudo usermod -aG docker $USER ```
 
 ## How to use
-$ sudo curl -LO https://raw.githubusercontent.com/amornpan/spark-standalone-cluster-docker/master/docker-compose.yml
+$ ``` sudo curl -LO https://raw.githubusercontent.com/amornpan/spark-standalone-cluster-docker/master/docker-compose.yml ```
 
 
